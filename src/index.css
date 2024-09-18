@@ -157,9 +157,28 @@ border-radius: 15px;
   border-color: #1e7e34;
   box-shadow: 0 0 1rem #218838;
 }
+@media (max-width: 250px) {
 
+  table tr{
+    width: 80% !important;
+  }
+  
+  .table td, .table th {
+    padding: 8px;
+  }
 
-@media (max-width: 576px) {
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .btn-secondary, .btn-success {
+    margin: 0; /* Remove margin if buttons stack vertically */
+  }
+}
+
+@media (min-width: 351px) and (max-width: 576px) {
+  
   .table td, .table th {
     padding: 8px;
   }
