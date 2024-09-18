@@ -1,0 +1,129 @@
+
+/* App.css */
+
+body {
+  background-color: #f4f6f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-container {
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJoDUFWM8eRhLEJvVqTO9Tl0XOa4kxKEj3Hw&s");
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-container:hover {
+  transform: scale(1.02);
+}
+
+.form-header {
+  color:peru;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.step-tabs .nav-link {
+  color: #6c757d;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.step-tabs .nav-link.active {
+  background-color: rgb(234, 156, 55);
+  color: white;
+  border: none;
+}
+
+.step-tabs .nav-link:disabled {
+  color: #ced4da;
+  cursor: not-allowed;
+}
+
+.step-content {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+button.nav-link:hover {
+  background-color: rgb(234, 156, 55);
+  color: white;
+  box-shadow: 0 0 1rem rgb(234, 156, 55);
+}
+
+button.nav-link:disabled:hover {
+  background-color: inherit;
+}
+
+
+/* Responsive Design */
+@media (max-width: 576px) { /* Small screens */
+  .form-container {
+    padding: 10px;
+    max-height: auto;
+  }
+
+  .form-header {
+    font-size: 20px; /* Smaller header for small screens */
+  }
+
+  .step-content {
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .step-tabs .nav-link {
+    font-size: 14px; /* Smaller font size for small screens */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) { /* Medium screens */
+  .form-container {
+    padding: 10px;
+    max-height: auto;
+  }
+
+  .form-header {
+    font-size: 22px;
+  }
+
+  .step-content {
+    padding: 20px;
+    margin-top: 12px;
+  }
+
+  .step-tabs .nav-link {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) { /* Large screens */
+  .form-container {
+    padding: 10px;
+    max-height: auto;
+  }
+
+  .form-header {
+    font-size: 24px;
+  }
+
+  .step-content {
+    padding: 20px;
+    margin-top: 15px;
+  }
+
+  .step-tabs .nav-link {
+    font-size: 18px;
+  }
+}
+

@@ -1,0 +1,206 @@
+
+
+.step-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.card-body{
+  background-color: rgb(249, 238, 226);
+}
+.card-header{
+background-color:peru;
+border-color: peru ;
+border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px peru !important;
+  border-color: peru ;
+  border-radius: 15px;
+}
+
+.form-control:focus {
+  border-color: peru;
+  box-shadow: 0 0 5px peru;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color:rgb(236, 166, 74);
+  border-color: burlywood;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgb(234, 156, 55);
+  border-color: rgb(234, 156, 55);
+  box-shadow: 0 0 1rem rgb(234, 156, 55);
+}
+
+.btn-secondary:hover{
+  box-shadow: 0 0 1rem grey;
+}
+
+.invalid-feedback {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 576px) { /* Small screens */
+  .step-container {
+    padding: 15px;
+  }
+
+  .card {
+    max-width: 90%;  /* Increase max-width for smaller screens */
+  }
+
+  .form-control:focus {
+    border-color: peru;
+    box-shadow: 0 0 5px peru; /* Adjusted color for better visibility */
+  }
+
+  .btn-primary {
+    font-size: 14px; /* Smaller font size for buttons */
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) { /* Medium screens */
+  .step-container {
+    padding: 20px;
+  }
+
+  .card {
+    max-width: 80%; /* Adjust width for medium screens */
+  }
+
+  .form-control:focus {
+    border-color: peru;
+    box-shadow: 0 0 5px peru;
+  }
+
+  .btn-primary {
+    font-size: 16px; /* Adjust font size for buttons */
+  }
+}
+
+@media (min-width: 769px) { /* Large screens */
+  .step-container {
+    padding: 20px;
+  }
+
+  .card {
+    max-width: 70%; /* Adjust width for large screens */
+  }
+
+  .form-control:focus {
+    border-color: peru;
+    box-shadow: 0 0 5px peru;
+  }
+
+  .btn-primary {
+    font-size: 18px; /* Larger font size for buttons */
+  }
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 0 5px peru;
+}
+
+.table td, .table th {
+  border: 1px solid peru;
+  padding: 12px;
+  box-shadow: 0 0 5px peru;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-bordered {
+  border: 1px solid peru;
+}
+
+.table-bordered td, .table-bordered th {
+  border: 1px solid peru;
+}
+
+.btn {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+  box-shadow: 0 0 1rem #218838;
+}
+
+
+@media (max-width: 576px) {
+  .table td, .table th {
+    padding: 8px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .btn-secondary, .btn-success {
+    margin: 0; /* Remove margin if buttons stack vertically */
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .table td, .table th {
+    padding: 10px;
+  }
+  
+  .btn {
+    width: 48%;
+  }
+  
+  .btn-secondary {
+    margin-right: 4%;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 769px) {
+  .table td, .table th {
+    padding: 12px;
+  }
+  
+  .btn {
+    width: auto;
+    margin: 0;
+  }
+  
+  .btn-secondary {
+    margin-right: 10px;
+  }
+}
