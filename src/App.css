@@ -71,6 +71,7 @@ button.nav-link:disabled:hover {
   .form-container {
     padding: 10px;
     max-height: auto;
+    margin: auto;
   }
 
   .form-header {
@@ -91,6 +92,7 @@ button.nav-link:disabled:hover {
   .form-container {
     padding: 10px;
     max-height: auto;
+    margin: auto;
   }
 
   .form-header {
